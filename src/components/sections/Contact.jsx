@@ -10,7 +10,7 @@ const ArrowLeft = ({ stroke = '#fff', size = 24 }) => (
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div>
       <Header />
       <main className="w-[1224px] mx-[108px] pt-[124px]">
         {/* body */}

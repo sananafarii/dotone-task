@@ -15,7 +15,7 @@ const ArrowLeft = ({ stroke = '#000', size = 20 }) => (
 const LargeArticle = ({ image, title, date }) => {
   return (
     <div className="w-[392px] h-[520px] rounded-[24px] bg-surface p-[16px]">
-      <div className="w-[360px] h-[298px] rounded-[18px] overflow-hidden bg-[#E9E9E9] mx-auto">
+      <div className="w-[360px] h-[298px] rounded-[18px] bg-[#E9E9E9] mx-auto">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
       <div className="mt-[12px]">

@@ -25,7 +25,7 @@ export default function FAQ() {
   const [openId, setOpenId] = useState(null);
 
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div>
       <Header />
       <main className="w-[1224px] mx-[108px] pt-[124px]">
         {/* body */}
@@ -89,5 +89,4 @@ export default function FAQ() {
     </div>
   );
 }
-
 
