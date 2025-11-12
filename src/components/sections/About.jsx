@@ -1,4 +1,3 @@
-// src/pages/About.jsx
 import React from "react";
 import OneSVG from "../../assets/Images/one.svg";
 import TwoSVG from "../../assets/Images/two.svg";
@@ -39,7 +38,7 @@ export default function About() {
 
             {/* map and icons */}
             <div className="absolute left-0 top-[35px] w-[696px] h-[193px]">
-              {/* خطوط */}
+              {/* lines */}
               <div className="absolute inset-0 pointer-events-none z-0">
                 <img
                   src={OneSVG}
@@ -51,13 +50,7 @@ export default function About() {
                   src={TwoSVG}
                   alt="line"
                   className="absolute"
-                  style={{ right: "240px", top: "42px", width: "90px", height: "141px" }}
-                />
-                <img
-                  src={ThreeSVG}
-                  alt="line"
-                  className="absolute"
-                  style={{ right: "130px", top: "26px", width: "136px", height: "26px" }}
+                  style={{ right: "240px", top: "15px", width: "90px", height: "141px" }}
                 />
               </div>
 

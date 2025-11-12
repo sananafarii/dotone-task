@@ -1,4 +1,3 @@
-// src/pages/Articles.jsx
 import React from "react";
 import A1 from "../../assets/Images/Article1.png";
 import A2 from "../../assets/Images/Article2.png";
@@ -14,7 +13,7 @@ const ArrowLeft = ({ stroke = "#000", size = 20 }) => (
 
 const LargeArticle = ({ image, title, date }) => {
   return (
-    <div className="w-[392px] h-[520px] rounded-[24px] bg-surface p-[16px] hover:shadow-xl transition-shadow duration-300">
+    <div className="w-[392px] h-[490px] rounded-[24px] bg-surface p-[16px] hover:shadow-xl transition-shadow duration-300">
       <div className="w-[360px] h-[298px] rounded-[18px] overflow-hidden bg-[#E9E9E9] mx-auto">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
@@ -23,7 +22,7 @@ const LargeArticle = ({ image, title, date }) => {
           {title}
         </p>
       </div>
-      <p className="mt-[12px] text-[12px] leading-[160%] text-right text-[#4A4A4A] line-clamp-3">
+        <p className="mt-[12px] text-[12px] leading-[160%] text-right text-[#4A4A4A] line-clamp-3">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
       </p>
       <div className="mt-[24px] flex items-center justify-between">
@@ -62,7 +61,7 @@ const SmallArticle = ({ image, title }) => {
 export default function Articles() {
   return (
     <section className="w-full max-w-[1440px] mx-auto px-[108px] mt-[120px]">
-      {/* عنوان و توضیحات */}
+      {/* title */}
       <div className="flex items-center justify-between mb-[40px]">
         <div className="flex items-center gap-3">
           <span className="w-[6px] h-[50px] bg-black rounded-l-[6px]"></span>
@@ -72,8 +71,8 @@ export default function Articles() {
         <div className="flex items-center justify-start gap-[8px] max-w-[797px]">
           <span className="w-[8px] h-[8px] bg-black rounded-full"></span>
           <p className="text-[12px] leading-[160%] text-right text-black">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد
-          </p>
+             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+         </p>
         </div>
 
         <button className="flex items-center gap-[4px] h-[40px] rounded-[14px] px-[10px] bg-brand text-brand-contrast text-[14px] hover:bg-brand/90 transition-colors whitespace-nowrap">
@@ -84,13 +83,13 @@ export default function Articles() {
         </button>
       </div>
 
-      {/* کارت‌ها */}
+      {/* cards — gap یکسان + تراز کامل */}
       <div className="grid grid-cols-3 gap-[20px]">
-        {/* ستون بزرگ سمت راست */}
-        <div className="col-span-2 grid grid-cols-2 gap-[20px] justify-items-end">
+        {/* ستون بزرگ سمت راست — حالا کاملاً تراز */}
+        <div className="col-span-2 grid grid-cols-2 gap-[20px] place-items-end">
           <LargeArticle
             image={A1}
-            title="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"
+            title="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت  "
             date="۲۴ خرداد ۱۴۰۳"
           />
           <LargeArticle
@@ -100,7 +99,6 @@ export default function Articles() {
           />
         </div>
 
-        {/* ستون کوچک سمت چپ */}
         <div className="flex flex-col gap-[16px]">
           <SmallArticle
             image={A3}
