@@ -6,9 +6,8 @@ import ThreeSVG from "../../assets/Images/three.svg";
 
 export default function About() {
   return (
-    <div className="pt-[100px] bg-white">
-      {/* Container */}
-      <div className="w-[1440px] mx-auto px-[108px]">
+    <section className="pt-[100px] bg-white">
+      <div className="max-w-[1440px] mx-auto px-[108px]">
         <div className="relative">
           {/* Main block */}
           <section className="relative w-[1224px] h-[268px] mt-[16px] rounded-[6px] overflow-hidden">
@@ -40,7 +39,7 @@ export default function About() {
 
             {/* map and icons */}
             <div className="absolute left-0 top-[35px] w-[696px] h-[193px]">
-              {/*  lines */}
+              {/* خطوط */}
               <div className="absolute inset-0 pointer-events-none z-0">
                 <img
                   src={OneSVG}
@@ -62,6 +61,7 @@ export default function About() {
                 />
               </div>
 
+              {/* ردیف بالا */}
               <div className="absolute right-[0px] top-0 flex items-center gap-[12px] z-10">
                 <div className="w-[118px] h-[52px] rounded-[14px] bg-surface flex items-center justify-center text-[14px] text-black">
                   تجربه سفر
@@ -73,7 +73,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* middle row */}
+              {/* ردیف وسط */}
               <div className="absolute right-[240px] top-0 flex items-center gap-[12px] z-10">
                 <div className="w-[53px] h-[52px] rounded-[16px] bg-surface flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* bottom row */}
+              {/* ردیف پایین */}
               <div className="absolute right-[40px] bottom-0 flex items-center gap-[24px] z-10">
                 <div className="flex items-center gap-[12px]">
                   <div className="w-[51px] h-[52px] rounded-[16px] bg-surface flex items-center justify-center">
@@ -118,6 +118,6 @@ export default function About() {
           </section>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
