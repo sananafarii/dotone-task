@@ -46,13 +46,13 @@ export default function About() {
                   src={OneSVG}
                   alt="line"
                   className="absolute"
-                  style={{ right: "20px", top: "52px", width: "90px", height: "141px" }}
+                  style={{ right: "60px", top: "30px", width: "90px", height: "141px" }}
                 />
                 <img
                   src={TwoSVG}
                   alt="line"
                   className="absolute"
-                  style={{ right: "216px", top: "52px", width: "90px", height: "141px" }}
+                  style={{ right: "240px", top: "42px", width: "90px", height: "141px" }}
                 />
                 <img
                   src={ThreeSVG}
